@@ -1,3 +1,3 @@
-variable "instance_type" {
-  description = "Type of EC2 instance to provision"
+variable "region" {
+  default = "us-east-1"
 }

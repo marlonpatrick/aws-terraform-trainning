@@ -1,12 +1,10 @@
 terraform {
-/*
   cloud {
     organization = "mpwtech-terracloud"
     workspaces {
-      name = "learn-tfc-aws"
+      name = "aws-terraform-trainning"
     }
   }
-*/
 
   required_providers {
     aws = {
@@ -16,14 +14,5 @@ terraform {
   }
 
   required_version = ">= 1.2.0"
-}
-
-provider "aws" {
-  region  = "us-west-2"
-}
-
-resource "aws_instance" "app_server" {
-  ami           = "ami-08d70e59c07c61a3a"
-  instance_type = var.instance_type
 }
 
