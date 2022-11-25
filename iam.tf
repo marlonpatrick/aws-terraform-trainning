@@ -18,7 +18,7 @@ resource "aws_iam_policy" "list_all_my_buckets" {
 }
 
 resource "aws_iam_group" "group_created_by_trf" {
-  name = "Group Created By Terraform"
+  name = "Group_Created_By_Terraform"
   path = "/"
 }
 
