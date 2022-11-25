@@ -17,3 +17,7 @@ resource "aws_iam_policy" "list_all_my_buckets" {
   policy = data.aws_iam_policy_document.list_all_my_buckets.json
 }
 
+resource "aws_iam_user" "created_by_terraform" {
+  name = "created_by_terraform"
+}
+
